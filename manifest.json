@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "version": "1.0.0-rc.1",
+  "release_status": "candidate-not-final",
+  "date": "2026-10-25",
+  "upstream": {
+    "repository": "https://github.com/affaan-m/ECC",
+    "commit": "90606c8315ee09cafc303515c5f33024db6b9882"
+  },
+  "skills": [
+    {
+      "name": "api-design",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/api-design",
+      "status": "Reuse",
+      "upstream_git_blob_sha1": "655d730e64492b997bded91038c52f75398c5563"
+    },
+    {
+      "name": "architecture-decision-records",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/architecture-decision-records",
+      "status": "Reuse",
+      "upstream_git_blob_sha1": "84f2dd608b4589f7e74e876927ddce866e12a3d1"
+    },
+    {
+      "name": "contract-first",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/contract-first",
+      "status": "Reuse",
+      "upstream_git_blob_sha1": "a828bd60db452daa6b4edaf4e6cc02d192b99071"
+    },
+    {
+      "name": "scientific-thinking-literature-review",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/scientific-thinking-literature-review",
+      "status": "Reuse",
+      "upstream_git_blob_sha1": "dd240c89bcabf71bbe1d181fbb7ba3c0d7935729"
+    },
+    {
+      "name": "python-patterns",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/python-patterns",
+      "status": "Adapt",
+      "upstream_git_blob_sha1": "ced3d588d816fb6880dfef4d67f30cab9d1b82df"
+    },
+    {
+      "name": "python-testing",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/python-testing",
+      "status": "Adapt",
+      "upstream_git_blob_sha1": "ddfcc0abc566994a35df68337476c2a401201e57"
+    },
+    {
+      "name": "tdd-workflow",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/tdd-workflow",
+      "status": "Adapt",
+      "upstream_git_blob_sha1": "ad6517386574e623d954c5e9fec74a3f0e36803a"
+    },
+    {
+      "name": "verification-loop",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/verification-loop",
+      "status": "Adapt",
+      "upstream_git_blob_sha1": "35cb4b7737ed2389a808b968aa360b00807eaffe"
+    },
+    {
+      "name": "security-review",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/security-review",
+      "status": "Adapt",
+      "upstream_git_blob_sha1": "3f26b0df65661425de4e5c40c295e04edcad7a83"
+    },
+    {
+      "name": "search-first",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/search-first",
+      "status": "Adapt",
+      "upstream_git_blob_sha1": "3d2669e71ba54afba95defb05080253058190600"
+    },
+    {
+      "name": "documentation-lookup",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/documentation-lookup",
+      "status": "Adapt",
+      "upstream_git_blob_sha1": "8bb9de6232d1693cd19a8e035712371e7c0e4769"
+    },
+    {
+      "name": "deep-research",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/deep-research",
+      "status": "Adapt",
+      "upstream_git_blob_sha1": "75371ee0ec6e627b1246154f28587da19c81581f"
+    },
+    {
+      "name": "product-prd",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/product-prd",
+      "status": "Adapt"
+    },
+    {
+      "name": "product-capability",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/product-capability",
+      "status": "Adapt"
+    },
+    {
+      "name": "requirements-spec",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/requirements-spec",
+      "status": "Build"
+    },
+    {
+      "name": "user-stories-ac",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/user-stories-ac",
+      "status": "Adapt"
+    },
+    {
+      "name": "bpmn-modeling",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/bpmn-modeling",
+      "status": "Build"
+    },
+    {
+      "name": "sqlite-data-model",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/sqlite-data-model",
+      "status": "Build"
+    },
+    {
+      "name": "system-design",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/system-design",
+      "status": "Build"
+    },
+    {
+      "name": "requirements-traceability",
+      "version": "1.0.0-rc.1",
+      "path": ".agents/skills/requirements-traceability",
+      "status": "Build"
+    }
+  ],
+  "files_sha256": {
+    ".agents/skills/api-design/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+    ".agents/skills/api-design/PROVENANCE.md": "9135f378d65a0c292cf6712e7dcb1caf59370420be38e18eafa9b65dd5be266a",
+    ".agents/skills/api-design/SKILL.md": "250e464413a13c0eb93cc73447b423df1f9aa8e4f80e5e68c41f895b2c33e352",
+    ".agents/skills/architecture-decision-records/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+    ".agents/skills/architecture-decision-records/PROVENANCE.md": "f06f91f30316836804dc2b6d4f25fe478a6ac000207861b5a3b1c35320a59a47",
+    ".agents/skills/architecture-decision-records/SKILL.md": "263b20e81801aa5fa7e75eaec6c38345c0ac028ca0edbd67b1b9071c5fcbe11f",
+    ".agents/skills/bpmn-modeling/LICENSE": "207902f970d5f572a74137ec495fe52cfbda2c1cec1ab8a8a66f2a013b592a1a",
+    ".agents/skills/bpmn-modeling/PROVENANCE.md": "76ade64c58f91c52044639fc0d346b31f049d51c400c6eec5b570ed19d7fc7c5",
+    ".agents/skills/bpmn-modeling/SKILL.md": "57e0b9771b5a909bc969b9d27a8d7ea445e8b7d129b88a8585d6c2609a3fdb4e",
+    ".agents/skills/bpmn-modeling/assets/process-checklist.md": "3a263fa505c2db5e0d35fd1571221003aa5ae75a42ffdf7a862d2474b0d0ef95",
+    ".agents/skills/contract-first/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+    ".agents/skills/contract-first/PROVENANCE.md": "783a18a10bb438546029760d49f44fcb6cf2711c14fd29e61906e1a79902dd8a",
+    ".agents/skills/contract-first/SKILL.md": "3eaacf16a9bbd92888659e9c1e15b0fa4eb96a41c257dd9e08f2e63b824f0cea",
+    ".agents/skills/deep-research/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+    ".agents/skills/deep-research/PROVENANCE.md": "15403cf5cba335319578ed07184bdb9dc8ab09981657a6d9a7eba34eb999e4b9",
+    ".agents/skills/deep-research/SKILL.md": "345dd5af2a8b63c304f1ad9d98d864db7894f60a9c18f6018d330452d804b8f5",
+    ".agents/skills/deep-research/UPSTREAM.diff": "4d3e17c1dbf7e41499f64beccbb90ac67df83834523e97c7bda69bf324aa6d95",
+    ".agents/skills/deep-research/upstream/ecc-source.md": "ca02a97ff8cd794c55a1313ab423a6a165fdf2ce59059a73e08f7cfd957b5319",
+    ".agents/skills/documentation-lookup/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+    ".agents/skills/documentation-lookup/PROVENANCE.md": "1be097155525982e71d82ca1a9c85079488d81d65d44ee00343abf709ea2cc3f",
+    ".agents/skills/documentation-lookup/SKILL.md": "17aa5f6309f0711949cb07de0f6b2afb70421c72010df14e0bee8093c58032b9",
+    ".agents/skills/documentation-lookup/UPSTREAM.diff": "2388336be9f4b3d9e3a3823e1a556bdbc1ff0b928096e839ac6416594cfafa0b",
+    ".agents/skills/documentation-lookup/upstream/ecc-source.md": "81ad2b5b4acbe02259f4b6cbfd9111d81d5cfe51025051b6048959c45f6516c1",
+    ".agents/skills/product-capability/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+    ".agents/skills/product-capability/PROVENANCE.md": "bcedeba405d80db0be90088ba81274c85bf9e61d81221ebf55e949cef36e023c",
+    ".agents/skills/product-capability/SKILL.md": "48bc3bd11ad05e3e8dff0607dd08cd0b2cba93f3d0bbac3e2f446c575da8ea47",
+    ".agents/skills/product-capability/UPSTREAM.diff": "16454cde4da575d62c10ce8b5fe16274f6b21ff43df6640cd8f935b81b44a193",
+    ".agents/skills/product-capability/assets/capability-template.md": "516f23a4c6a17ba45be08ea85f4faf9e9586395c7d4550896786fa2359726eee",
+    ".agents/skills/product-capability/upstream/ecc-source.md": "c26114356edb15f0340e5af66b6f4444892bdf376b053a7152312fd04d22aced",
+    ".agents/skills/product-capability/upstream/product-capability-template.md": "89493f6c7ac5751517f24060a435844ce2dceed1f75782f3224bd0df921cebd2",
+    ".agents/skills/product-prd/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+    ".agents/skills/product-prd/PROVENANCE.md": "1f1b8d4ccdb4909eec373d5825892881581c325b74a641a02517b918f086ccb9",
+    ".agents/skills/product-prd/SKILL.md": "b81b1f3547fd78842aac11c9736fe0a24bc34b35207c3c0adce16e8bf531fed8",
+    ".agents/skills/product-prd/UPSTREAM.diff": "4828ffbeaaaeadca199023a4c649a5a0e8135b9d57bf2a0f6f00791c1cf60f23",
+    ".agents/skills/product-prd/assets/prd-template.md": "f023490fa1eeaaba4a79099d7d7f72b3dbdbbaa95e811d1946209c9c4a82d06b",
+    ".agents/skills/product-prd/upstream/ecc-source.md": "eef91fc48d8725238e4a23625156efa046e8ba51fb03e97b4162a2aa7cfb66be",
+    ".agents/skills/python-patterns/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+    ".agents/skills/python-patterns/PROVENANCE.md": "81c78b65f31294070fda6b38a8c13f4d64df015b9434b4798cbdda8bd8da9652",
+    ".agents/skills/python-patterns/SKILL.md": "d74f0e8ca4ade0f17c1d6df45ca71d6852f5f6532b92291dac84d08827301391",
+    ".agents/skills/python-patterns/UPSTREAM.diff": "04b012c3b78c7ee9f1bada115984f8d7cd1e6f0cd2eb208cad4f678442ad6508",
+    ".agents/skills/python-patterns/upstream/ecc-source.md": "103e0130dac33a49d26705fc5a2df804980fcab6a0138d65bc7f370a987d49f6",
+    ".agents/skills/python-testing/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+    ".agents/skills/python-testing/PROVENANCE.md": "9a0d4a9c2be60b740abd653504e7b9d1836442e229ba3f3f6e36ed13942afdc3",
+    ".agents/skills/python-testing/SKILL.md": "594a28716cc8d7a7851cb3de86c6c0541214fb9f5276ce2d97207ccb82d895c7",
+    ".agents/skills/python-testing/UPSTREAM.diff": "bf465c8b29bf43aafef1c2ba01d38fa2313e52cd4ee52e32cfb5ad24e21c50bf",
+    ".agents/skills/python-testing/upstream/ecc-source.md": "b9f7a158dae3b6c06c9c75ffe84e27a1edc86092d2afdcb39e96fc2569902eb7",
+    ".agents/skills/requirements-spec/LICENSE": "207902f970d5f572a74137ec495fe52cfbda2c1cec1ab8a8a66f2a013b592a1a",
+    ".agents/skills/requirements-spec/PROVENANCE.md": "76ade64c58f91c52044639fc0d346b31f049d51c400c6eec5b570ed19d7fc7c5",
+    ".agents/skills/requirements-spec/SKILL.md": "7e2533729ac2551d7791a9237fea9d7877bacea78a41227b6003ad967d420d44",
+    ".agents/skills/requirements-spec/assets/spec-template.md": "5b54b2209a896a8acfa03a96a67419d5c24d12b560d4bf91d71e5568506f0712",
+    ".agents/skills/requirements-traceability/LICENSE": "207902f970d5f572a74137ec495fe52cfbda2c1cec1ab8a8a66f2a013b592a1a",
+    ".agents/skills/requirements-traceability/PROVENANCE.md": "76ade64c58f91c52044639fc0d346b31f049d51c400c6eec5b570ed19d7fc7c5",
+    ".agents/skills/requirements-traceability/SKILL.md": "69e332ad5bf5b04798dabf7adb4606ccec629cbc5d4a5c65a560cf2bd4b016d1",
+    ".agents/skills/requirements-traceability/assets/traceability-format.md": "9ae18737bf642f6620d82a2dc9b76e88a8482fcaf10c8c26b3c55a7a5c84d056",
+    ".agents/skills/requirements-traceability/scripts/check_traceability.py": "72892ac11dc4f6d87ecfc7879b1aa3d5a074f2fa23831838f0a4374d371dda03",
+    ".agents/skills/scientific-thinking-literature-review/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+    ".agents/skills/scientific-thinking-literature-review/PROVENANCE.md": "df3f6b241de7ad8504415faf86c54f1dd870d169f687ab32862e3ec1e1950f91",
+    ".agents/skills/scientific-thinking-literature-review/SKILL.md": "380918f545c7e9b297b23bee4a0432deba977acbdb217232bf1ab9d5aa3c562e",
+    ".agents/skills/search-first/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+    ".agents/skills/search-first/PROVENANCE.md": "c9e2241a00138ba52dc33f5f7f76cbe3bfd08368008d2a5e3773d1bd0058ca3d",
+    ".agents/skills/search-first/SKILL.md": "dfd7a0d49a67f5ce92c4b68a35890200a6fcedbafa92b857566bb83c27b14df6",
+    ".agents/skills/search-first/UPSTREAM.diff": "e6bebf8750d833f499dfc7b814a721534a3783731c47cbfb86e85d76628771ae",
+    ".agents/skills/search-first/upstream/ecc-source.md": "76835db48dd910061d2e4271b1151793d2fddbabeb2d2866eed068b3580c55d5",
+    ".agents/skills/security-review/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+    ".agents/skills/security-review/PROVENANCE.md": "f0b4cd09732291616c32ad0b99d232fd3dc2bfb067c57c9e2ca42a179978c4aa",
+    ".agents/skills/security-review/SKILL.md": "d17a93585fb5e49348e1128807126ac5a93e5ded8aef2e21bc268ebb318973dd",
+    ".agents/skills/security-review/UPSTREAM.diff": "489a110c0054e2322471ecef2593f0eaa885bac7da041432971447abcdc9427e",
+    ".agents/skills/security-review/upstream/ecc-source.md": "b9eb6416eebc8dda046674f0a2dbb3be88aff526d182b60a0f55998d3d6d0d8d",
+    ".agents/skills/sqlite-data-model/LICENSE": "207902f970d5f572a74137ec495fe52cfbda2c1cec1ab8a8a66f2a013b592a1a",
+    ".agents/skills/sqlite-data-model/PROVENANCE.md": "76ade64c58f91c52044639fc0d346b31f049d51c400c6eec5b570ed19d7fc7c5",
+    ".agents/skills/sqlite-data-model/SKILL.md": "4547761ec95f507087bffbea18bede2cb63ffe48ec67db21386f3c45846d18a6",
+    ".agents/skills/sqlite-data-model/assets/model-checklist.md": "e04b509b24a415c9d95b4209fea88d3193c031c2a25ff4756ad7490c43851df6",
+    ".agents/skills/system-design/LICENSE": "207902f970d5f572a74137ec495fe52cfbda2c1cec1ab8a8a66f2a013b592a1a",
+    ".agents/skills/system-design/PROVENANCE.md": "76ade64c58f91c52044639fc0d346b31f049d51c400c6eec5b570ed19d7fc7c5",
+    ".agents/skills/system-design/SKILL.md": "bc4eb652bf9094857fd63845153b7bac8646913fe52802da198a2a517cc60ff4",
+    ".agents/skills/system-design/assets/design-template.md": "cf43b6ea0ceae17cd319e3474ad3d872ea4adc7cc7092bf76d8157e0524d2622",
+    ".agents/skills/tdd-workflow/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+    ".agents/skills/tdd-workflow/PROVENANCE.md": "45d57eef96c3cb45db84d3c6014d566e67e2cbd98a55db31f5c23f83bfc6f5c2",
+    ".agents/skills/tdd-workflow/SKILL.md": "81c81992bcba25be787eb125f7402028d8ff44a6f9312f5c6f3ab860085f0de5",
+    ".agents/skills/tdd-workflow/UPSTREAM.diff": "7a4be49155aac5144760482070fb2e6e0802d30c2850d4d5b892066d85c3ae03",
+    ".agents/skills/tdd-workflow/upstream/ecc-source.md": "8887afa786ef30de834e7567115d3df71934b343c3d9d849714f8ea43f979ee0",
+    ".agents/skills/user-stories-ac/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+    ".agents/skills/user-stories-ac/PROVENANCE.md": "094d8e0601bfeb2a3ec2a5ba1790a2fa25bf382b3f6cabefef34e23db9158560",
+    ".agents/skills/user-stories-ac/SKILL.md": "0f6f9c466d3a0341b25c08f4705ed2798b36510ce67dbc313ce566f04e963e4f",
+    ".agents/skills/user-stories-ac/UPSTREAM.diff": "86341541ed827d7001452090d4372c36e404f1632a0c71dccfd96a7b4f3ddd90",
+    ".agents/skills/user-stories-ac/assets/story-template.md": "8fd1e7c7783c8a42a0019c0aa5543f0027d0d5b889683fe561a3e90a5751cddf",
+    ".agents/skills/user-stories-ac/upstream/ecc-source.md": "1492a724d4df362d8e95a340fabd22423e20965b1d0f9ebc6d2d319aca843194",
+    ".agents/skills/verification-loop/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
+    ".agents/skills/verification-loop/PROVENANCE.md": "bc67f7489c7c1e55418eaa83ad9a17bde66f1ffe7e61aa41428a07bbe824757e",
+    ".agents/skills/verification-loop/SKILL.md": "0e499fcb2003d353d9d83c37268496a5bc57b08cfa63c758fea1f8256281bf76",
+    ".agents/skills/verification-loop/UPSTREAM.diff": "031e82e066a2dde4ac8406c18aea291e926e34b8506c90026556233377c4346f",
+    ".agents/skills/verification-loop/upstream/ecc-source.md": "5b06be54d4852f60e6cf1b04c6e9a4748554334eb3e41af6c0959b544e6464ae",
+    ".gitignore": "59e55853fb563f4d781ac5cc3d69820ac4dacd6396fc32d9211695a3e7cd74b2",
+    "LICENSE": "ac62502793812b58f1430ed9137f8c12e6ded62f7ad039ad11fdf5c839db6b22",
+    "NOTICE.md": "42d540280cc7db25d75bd99b290f92902509125bce06f7165ce9cd42679dbc0c",
+    "README.md": "d6a9e6d2865951a01a402c6ef77e405d6daceb488f3591b4bbb0ed9c7406570b",
+    "tests/check_frontmatter.rb": "c7a9f62e89ead0a17bf44da6d0954e9852651d387867825b78580566bb711e35",
+    "tests/test_bundle.py": "518a7529bf7ec01e42f62533cb7b846cb73900e02e4602fce9cce491853de57a",
+    "tests/test_traceability.py": "3dd546aad9583ffe4b085bf0bb49925b127a41498cfafe8ec11e3c22d0b3b1ba"
+  }
+}
