@@ -90,8 +90,12 @@ manifest as part of review. Tests do not rewrite the expected hashes automatical
 ## Publication and maintenance
 
 Publish only the contents of this folder, not its parent workspace.
-The GitHub repository and release tag have not yet been created. Before a release,
-review the diff, licenses, file hashes, absence of private data, and applicable tests.
+Repository: [Sementrudovik/codex-engineering-toolkit](https://github.com/Sementrudovik/codex-engineering-toolkit).
+The initial release candidate is tagged
+[`v1.0.0-rc.1`](https://github.com/Sementrudovik/codex-engineering-toolkit/tree/v1.0.0-rc.1).
+This tag marks a release candidate, not a completed v1.0 acceptance review.
+Before a release, review the diff, licenses, file hashes, absence of private data,
+and applicable tests.
 Sources and attribution are documented in [NOTICE.md](NOTICE.md);
 license terms are in [LICENSE](LICENSE).
 Codex documentation: https://learn.chatgpt.com/docs/build-skills

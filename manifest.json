@@ -237,7 +237,7 @@
     ".gitignore": "59e55853fb563f4d781ac5cc3d69820ac4dacd6396fc32d9211695a3e7cd74b2",
     "LICENSE": "ac62502793812b58f1430ed9137f8c12e6ded62f7ad039ad11fdf5c839db6b22",
     "NOTICE.md": "42d540280cc7db25d75bd99b290f92902509125bce06f7165ce9cd42679dbc0c",
-    "README.md": "d6a9e6d2865951a01a402c6ef77e405d6daceb488f3591b4bbb0ed9c7406570b",
+    "README.md": "b537190c90c89c0b0874b14ceb3e7f873033023d7c29434168adb78911e215da",
     "tests/check_frontmatter.rb": "c7a9f62e89ead0a17bf44da6d0954e9852651d387867825b78580566bb711e35",
     "tests/test_bundle.py": "518a7529bf7ec01e42f62533cb7b846cb73900e02e4602fce9cce491853de57a",
     "tests/test_traceability.py": "3dd546aad9583ffe4b085bf0bb49925b127a41498cfafe8ec11e3c22d0b3b1ba"
