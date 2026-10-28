@@ -1,0 +1,65 @@
+--- upstream/source.md
++++ SKILL.md
+@@ -3 +3,4 @@
+-description: Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.
++description: "Stress-test a plan, decision, or idea through dependent questions when the user requests grilling or an interview before planning."
++license: MIT
++metadata:
++  origin: mattpocock-adapted
+@@ -6 +9 @@
+-Interview the user relentlessly until you reach a shared understanding. Map this as a **design tree**: every decision branches into the decisions that hang off it.
++# Grilling
+@@ -8 +11,5 @@
+-Work the tree in **rounds**. The **frontier** is every decision whose prerequisites are already settled: the questions you can ask _now_ without guessing at answers you haven't heard yet. Ask the whole frontier in one round: number each question and give your recommended answer. Then wait for the user's answers before the next round.
++## Establish scope and facts
++Identify the decision, intended outcome and requested depth. Planning stays planning
++until implementation is authorized; existing authorization need not be requested again.
++Read relevant materials for facts before asking the user. Mark evidence and unknowns;
++use one agent unless delegation is authorized. Missing access is a gap, not a guessed fact.
+@@ -10 +17,5 @@
+-Format a round like so:
++## Work the decision frontier
++Represent decisions and prerequisites. The frontier contains decisions whose prerequisites
++are settled. Ask only from that frontier: normally one to three high-impact independent
++questions, but adapt the round size to the user's preference and task. Small rounds can
++increase total turns, so do not claim they inherently save tokens.
+@@ -12,2 +23 @@
+-```
+-❓ **Q1** - **<question title>**: <question body, might be multiple paragraphs, including multiple choices>
++Use this compact round structure, adjusted to the question tool if available:
+@@ -15 +25,4 @@
+-➡️ <your recommended answer>
++1. **Question / decision ID:** the choice to make.
++2. **Prerequisite:** the settled fact/decision that makes it answerable now.
++3. **Options and trade-off:** meaningful alternatives.
++4. **Recommendation and reason:** a proposal, not assumed agreement.
+@@ -17 +30,3 @@
+----
++Avoid wording designed to make agreement automatic. Wait for required decisions before
++advancing dependent work. Continue independent investigation where useful. A question
++whose answer depends on another open question belongs in a later round.
+@@ -19 +34,7 @@
+-❓ **Q2** - **<question title>**: <question body, might be multiple paragraphs, including multiple choices>
++## Keep a decision ledger
++Maintain settled decisions with their source, assumptions, current frontier, explicitly
++deferred branches and blockers with their dependency/impact. Keep it in the response
++unless the task authorizes a durable artifact. After each answer recompute the frontier;
++carry deferred items forward rather than silently dropping them. Challenge contradictions
++respectfully and distinguish existing behavior from intended behavior. Do not ask the
++user to repeat facts already established by available materials.
+@@ -21,10 +42,5 @@
+-➡️ <your recommended answer>
+-```
+-
+-Word each question so "yes" accepts your recommended answer.
+-
+-Each round the user answers reshapes the tree: settled decisions push the frontier outward and unblock questions that depended on them. Recompute the frontier and ask the next round. A question whose answer depends on another question still open in this round belongs to a _later_ round, not this one.
+-
+-Finding _facts_ is your job, never the user's. When a frontier question needs a fact from the environment (filesystem, tools, etc.), dispatch a sub-agent to find it; don't ask the user for anything you could look up yourself. Don't block on it: a running exploration is an unsettled prerequisite, so only the questions downstream of it wait for the sub-agent to report; ask the rest of the frontier now. The _decisions_ are the user's: put each to them and wait.
+-
+-The session is done when the frontier is empty: every branch of the design tree visited, nothing left silently assumed. Do not act on it until the user confirms you have reached a shared understanding.
++## Finish at the agreed boundary
++Stop when the requested scope is resolved or the user asks to stop. Return decisions,
++remaining assumptions/blockers, deferred branches, non-goals and the next concrete step.
++Do not promise to resolve every possible branch. Recommendations and elapsed time are
++not approval; a missing required answer remains a blocker, not permission to guess.

@@ -1,0 +1,109 @@
+--- upstream/source.md
++++ SKILL.md
+@@ -3 +3,4 @@
+-description: Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a GLOSSARY.md, or recording or editing an ADR.
++description: "Clarify domain terminology, entities, relationships, boundaries, and invariants when designing or revising a domain model or glossary."
++license: MIT
++metadata:
++  origin: mattpocock-adapted
+@@ -8 +11,5 @@
+-Actively build and sharpen the project's domain model as you design. This is the *active* discipline: challenging terms, inventing edge-case scenarios, and writing the glossary and decisions down the moment they crystallise. (Merely *reading* `GLOSSARY.md` for vocabulary is not this skill: that's a one-line habit any skill can do. This skill is for when you're changing the model, not just consuming it.)
++## 1. Locate the relevant language
++If GLOSSARY-MAP.md exists, follow its context links; otherwise read the relevant existing
++GLOSSARY.md and domain documents. Follow established paths before proposing new ones.
++When no glossary exists, discuss a draft model; absence alone does not authorize creation.
++Reading a glossary for ordinary code work is not itself a modeling task.
+@@ -10 +17,6 @@
+-## File structure
++## 2. Sharpen and stress-test the model
++Challenge ambiguous/conflicting terms with concrete examples. Mark invented cases as
++hypothetical. A term may legitimately have different meanings across bounded contexts;
++qualify it at boundaries rather than forcing one global definition. For important concepts
++identify identity, relationships, cardinalities, ownership and lifecycle/invariants.
++Separate domain meaning from tables, classes and infrastructure.
+@@ -12 +24,4 @@
+-Most repos have a single context:
++Compare stated rules with accessible code. A mismatch is a decision to resolve, not proof
++that current implementation or a proposed rule is automatically authoritative. Record
++alternatives and downstream impact; ask only for business decisions or facts unavailable
++from accessible sources. Do not invent product approval.
+@@ -14,9 +29,6 @@
+-```
+-/
+-├── GLOSSARY.md
+-├── docs/
+-│   └── adr/
+-│       ├── 0001-event-sourced-orders.md
+-│       └── 0002-postgres-for-write-model.md
+-└── src/
+-```
++## 3. Separate artifacts and permission
++First establish whether recording changes is authorized. If not, return proposed terms,
++relationships, invariants, conflicts and open questions in the response; no file is written.
++If writing is authorized, select the existing project format; only if no suitable format
++exists use [the glossary template](assets/glossary-template.md). For structure/routing
++questions read [recording guidance](references/recording.md).
+@@ -24 +36,5 @@
+-If a `GLOSSARY-MAP.md` exists at the root, the repo has multiple contexts. The map points to where each one lives:
++Keep glossary entries concise: meaning, context, domain-specific aliases and agreement
++status. Store detailed identity rules, relationships, lifecycle and invariants in the
++established capability/spec/domain-model artifact and link to it when needed. A glossary
++is not a specification, scratchpad or implementation-design store. Record resolved terms
++promptly within scope; keep unsettled proposals visibly separate from agreed vocabulary.
+@@ -26,49 +42,7 @@
+-```
+-/
+-├── GLOSSARY-MAP.md
+-├── docs/
+-│   └── adr/                          ← system-wide decisions
+-├── src/
+-│   ├── ordering/
+-│   │   ├── GLOSSARY.md
+-│   │   └── docs/adr/                 ← context-specific decisions
+-│   └── billing/
+-│       ├── GLOSSARY.md
+-│       └── docs/adr/
+-```
+-
+-Create files lazily: only when you have something to write. If no `GLOSSARY.md` exists, create one when the first term is resolved. If no `docs/adr/` exists, create it when the first ADR is needed.
+-
+-## During the session
+-
+-### Challenge against the glossary
+-
+-When the user uses a term that conflicts with the existing language in `GLOSSARY.md`, call it out immediately. "Your glossary defines 'cancellation' as X, but you seem to mean Y. Which is it?"
+-
+-### Sharpen fuzzy language
+-
+-When the user uses vague or overloaded terms, propose a precise canonical term. "You're saying 'account': do you mean the Customer or the User? Those are different things."
+-
+-### Discuss concrete scenarios
+-
+-When domain relationships are being discussed, stress-test them with specific scenarios. Invent scenarios that probe edge cases and force the user to be precise about the boundaries between concepts.
+-
+-### Cross-reference with code
+-
+-When the user states how something works, check whether the code agrees. If you find a contradiction, surface it: "Your code cancels entire Orders, but you just said partial cancellation is possible. Which is right?"
+-
+-### Update GLOSSARY.md inline
+-
+-When a term is resolved, update `GLOSSARY.md` right there. Don't batch these up: capture them as they happen. Use the format in [GLOSSARY-FORMAT.md](./GLOSSARY-FORMAT.md).
+-
+-`GLOSSARY.md` should be totally devoid of implementation details. Do not treat `GLOSSARY.md` as a spec, a scratch pad, or a repository for implementation decisions. It is a glossary and nothing else.
+-
+-### Offer ADRs sparingly
+-
+-Only offer to create an ADR when all three are true:
+-
+-1. **Hard to reverse**: the cost of changing your mind later is meaningful
+-2. **Surprising without context**: a future reader will wonder "why did they do it this way?"
+-3. **The result of a real trade-off**: there were genuine alternatives and you picked one for specific reasons
+-
+-If any of the three is missing, skip the ADR. Use the format in [ADR-FORMAT.md](./ADR-FORMAT.md).
++## 4. Offer decisions sparingly
++Propose an ADR when all three apply: reversal is meaningfully costly, the choice would
++surprise a future reader without context, and genuine alternatives were weighed. Otherwise
++use a lighter note or the existing project convention. Read the ADR branch of recording
++guidance only when a decision merits recording. Use the established ADR format or an
++available ADR Skill; none is mandatory. Discussion alone does not authorize writing an
++accepted ADR. Implementation/schema design remains a separate task unless requested.

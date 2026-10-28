@@ -1,7 +1,7 @@
 require 'yaml'
 root = File.expand_path('..', __dir__)
 paths = Dir[File.join(root, '.agents/skills/*/SKILL.md')].sort
-raise 'Expected 20 Skills' unless paths.size == 20
+raise 'Expected 26 Skills' unless paths.size == 26
 paths.each do |path|
   match = File.read(path).match(/\A---\n(.*?)\n---\n/m)
   raise "Missing frontmatter: #{path}" unless match
@@ -10,4 +10,9 @@ paths.each do |path|
   raise "Invalid name: #{path}" unless data['name'] == name && name.match?(/\A[a-z0-9]+(?:-[a-z0-9]+)*\z/) && name.length < 64
   raise "Invalid description: #{path}" unless data['description'].is_a?(String) && data['description'].length.between?(1, 1024)
 end
-puts 'PASS: 20 YAML frontmatters (Ruby Psych safe_load)'
+puts 'PASS: 26 YAML frontmatters (Ruby Psych safe_load)'
+
+%w[retro handoff].each do |name|
+  policy = YAML.safe_load(File.read(File.join(root, '.agents/skills', name, 'agents/openai.yaml')))
+  raise "Explicit-only policy lost: #{name}" unless policy.dig('policy','allow_implicit_invocation') == false
+end

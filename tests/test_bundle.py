@@ -21,18 +21,18 @@ class BundleTests(unittest.TestCase):
             self.assertFalse(p.is_symlink())
             self.assertEqual(hashlib.sha256(p.read_bytes()).hexdigest(), digest, relative)
 
-    def test_twenty_unique_skills_and_resources(self):
+    def test_skill_inventory_and_resources(self):
         skills = MANIFEST['skills']
-        self.assertEqual(len(skills), 20)
-        self.assertEqual(len({s['name'] for s in skills}), 20)
+        self.assertEqual(len(skills), 26)
+        self.assertEqual(len({s['name'] for s in skills}), 26)
         self.assertEqual(sorted(s['status'] for s in skills).count('Reuse'), 4)
-        self.assertEqual(sorted(s['status'] for s in skills).count('Adapt'), 11)
+        self.assertEqual(sorted(s['status'] for s in skills).count('Adapt'), 17)
         self.assertEqual(sorted(s['status'] for s in skills).count('Build'), 5)
         for skill in skills:
             folder = ROOT / skill['path']
             for name in ('SKILL.md', 'LICENSE', 'PROVENANCE.md'):
                 self.assertTrue((folder / name).is_file())
-        self.assertEqual(len(list((ROOT / '.agents/skills').rglob('SKILL.md'))), 20)
+        self.assertEqual(len(list((ROOT / '.agents/skills').rglob('SKILL.md'))), 26)
 
     def test_reuse_upstream_git_blobs(self):
         for skill in MANIFEST['skills']:
@@ -60,6 +60,13 @@ class BundleTests(unittest.TestCase):
                 if not target or re.match(r'[a-z]+:', target) or target.startswith('/'):
                     continue
                 self.assertTrue((entry.parent / target).exists(), f'{entry}: {target}')
+
+    def test_added_adaptations_preserve_sources(self):
+        for skill in MANIFEST['skills']:
+            for source in skill.get('upstream_files', []):
+                raw = (ROOT / skill['path'] / source['archive']).read_bytes()
+                blob = b'blob ' + str(len(raw)).encode() + b'\0' + raw
+                self.assertEqual(hashlib.sha1(blob).hexdigest(), source['git_blob_sha1'])
 
 if __name__ == '__main__':
     unittest.main()

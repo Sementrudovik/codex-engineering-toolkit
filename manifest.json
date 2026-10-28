@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "version": "1.0.0-rc.1",
-  "release_status": "candidate-not-final",
-  "date": "2026-10-25",
+  "version": "1.0.1-rc.2",
+  "release_status": "accepted-for-daily-use-with-documented-limitations",
+  "date": "2026-10-28",
   "upstream": {
     "repository": "https://github.com/affaan-m/ECC",
     "commit": "90606c8315ee09cafc303515c5f33024db6b9882"
@@ -139,6 +139,176 @@
       "version": "1.0.0-rc.1",
       "path": ".agents/skills/requirements-traceability",
       "status": "Build"
+    },
+    {
+      "name": "diagnosing-bugs",
+      "path": ".agents/skills/diagnosing-bugs",
+      "version": "1.0.1-rc.2",
+      "status": "Adapt",
+      "invocation": "automatic-allowed",
+      "required_skills": [],
+      "required_mcp": [],
+      "required_hooks": [],
+      "required_agents": [],
+      "optional_skills": [
+        "python-testing",
+        "tdd-workflow",
+        "verification-loop"
+      ],
+      "runtime_resources": [
+        "references/reproduction.md"
+      ],
+      "content_revision": 2,
+      "upstream_files": [
+        {
+          "archive": "upstream/source.md",
+          "git_blob_sha1": "d039541ddd1c46e6ddbd662fe99d49b686fc5e12",
+          "source_path": "skills/engineering/diagnosing-bugs/SKILL.md"
+        },
+        {
+          "archive": "upstream/hitl-loop.template.sh.txt",
+          "git_blob_sha1": "243198464a8401a7ba1d63b3708fa43c3d067665",
+          "source_path": "skills/engineering/diagnosing-bugs/scripts/hitl-loop.template.sh"
+        }
+      ]
+    },
+    {
+      "name": "domain-modeling",
+      "path": ".agents/skills/domain-modeling",
+      "version": "1.0.1-rc.2",
+      "status": "Adapt",
+      "invocation": "automatic-allowed",
+      "required_skills": [],
+      "required_mcp": [],
+      "required_hooks": [],
+      "required_agents": [],
+      "optional_skills": [
+        "architecture-decision-records"
+      ],
+      "runtime_resources": [
+        "references/recording.md",
+        "assets/glossary-template.md"
+      ],
+      "content_revision": 2,
+      "upstream_files": [
+        {
+          "archive": "upstream/source.md",
+          "git_blob_sha1": "a4438c6879c517d1a08e2b5fbca049b632688dfe",
+          "source_path": "skills/engineering/domain-modeling/SKILL.md"
+        },
+        {
+          "archive": "upstream/GLOSSARY-FORMAT.md",
+          "git_blob_sha1": "9c0b4c7a2e8507c23cbb5e0baa66d81699321cc6",
+          "source_path": "skills/engineering/domain-modeling/GLOSSARY-FORMAT.md"
+        },
+        {
+          "archive": "upstream/ADR-FORMAT.md",
+          "git_blob_sha1": "d7e61f30a9fd8ca70d9ee68f019c2a9ebf2d13f7",
+          "source_path": "skills/engineering/domain-modeling/ADR-FORMAT.md"
+        }
+      ]
+    },
+    {
+      "name": "grilling",
+      "path": ".agents/skills/grilling",
+      "version": "1.0.1-rc.2",
+      "status": "Adapt",
+      "invocation": "automatic-allowed",
+      "required_skills": [],
+      "required_mcp": [],
+      "required_hooks": [],
+      "required_agents": [],
+      "optional_skills": [],
+      "runtime_resources": [],
+      "content_revision": 2,
+      "upstream_files": [
+        {
+          "archive": "upstream/source.md",
+          "git_blob_sha1": "df69d9936880cd3314c28858c6c52f48db23b856",
+          "source_path": "skills/productivity/grilling/SKILL.md"
+        }
+      ]
+    },
+    {
+      "name": "handoff",
+      "path": ".agents/skills/handoff",
+      "version": "1.0.1-rc.2",
+      "status": "Adapt",
+      "invocation": "explicit-only",
+      "required_skills": [],
+      "required_mcp": [],
+      "required_hooks": [],
+      "required_agents": [],
+      "optional_skills": [],
+      "runtime_resources": [
+        "assets/handoff-template.md",
+        "agents/openai.yaml"
+      ],
+      "content_revision": 2,
+      "upstream_files": [
+        {
+          "archive": "upstream/source.md",
+          "git_blob_sha1": "a224edc643a20ddb989f9bca1547440169159810",
+          "source_path": "skills/productivity/handoff/SKILL.md"
+        }
+      ]
+    },
+    {
+      "name": "retro",
+      "path": ".agents/skills/retro",
+      "version": "1.0.1-rc.2",
+      "status": "Adapt",
+      "invocation": "explicit-only",
+      "required_skills": [],
+      "required_mcp": [],
+      "required_hooks": [],
+      "required_agents": [],
+      "optional_skills": [
+        "writing-for-agents"
+      ],
+      "runtime_resources": [
+        "references/instruction-placement.md",
+        "agents/openai.yaml"
+      ],
+      "content_revision": 2,
+      "upstream_files": [
+        {
+          "archive": "upstream/source.md",
+          "git_blob_sha1": "12149acf2dd23b4514dec57b04a6293eaa1352fa",
+          "source_path": "skills/engineering/retro/SKILL.md"
+        }
+      ]
+    },
+    {
+      "name": "writing-for-agents",
+      "path": ".agents/skills/writing-for-agents",
+      "version": "1.0.1-rc.2",
+      "status": "Adapt",
+      "invocation": "automatic-allowed",
+      "required_skills": [],
+      "required_mcp": [],
+      "required_hooks": [],
+      "required_agents": [],
+      "optional_skills": [
+        "skill-creator"
+      ],
+      "runtime_resources": [
+        "references/editing-techniques.md",
+        "references/skill-packaging.md"
+      ],
+      "content_revision": 2,
+      "upstream_files": [
+        {
+          "archive": "upstream/source.md",
+          "git_blob_sha1": "a37608daf6e835e767deecfb498facecaaba82ba",
+          "source_path": "skills/productivity/writing-for-agents/SKILL.md"
+        },
+        {
+          "archive": "upstream/SKILL-MECHANICS.md",
+          "git_blob_sha1": "9cdbdb22aadc438755392216e75ad9a14cc9832e",
+          "source_path": "skills/productivity/writing-for-agents/SKILL-MECHANICS.md"
+        }
+      ]
     }
   ],
   "files_sha256": {
@@ -160,11 +330,39 @@
     ".agents/skills/deep-research/SKILL.md": "345dd5af2a8b63c304f1ad9d98d864db7894f60a9c18f6018d330452d804b8f5",
     ".agents/skills/deep-research/UPSTREAM.diff": "4d3e17c1dbf7e41499f64beccbb90ac67df83834523e97c7bda69bf324aa6d95",
     ".agents/skills/deep-research/upstream/ecc-source.md": "ca02a97ff8cd794c55a1313ab423a6a165fdf2ce59059a73e08f7cfd957b5319",
+    ".agents/skills/diagnosing-bugs/LICENSE": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    ".agents/skills/diagnosing-bugs/PROVENANCE.md": "814fd0ec692fb0a6ba2384068b42ea7d6aafe813045f3fa721b57bfe4f3ee0d6",
+    ".agents/skills/diagnosing-bugs/SKILL.md": "9e0920be21c01cfa0e9f40a9bc97be4c00b0ed6bd3167feffd45da91c11fa84f",
+    ".agents/skills/diagnosing-bugs/UPSTREAM.diff": "2b3246f395348567ee97d62156af7c1e67a545e4394d18995c23efee04e82472",
+    ".agents/skills/diagnosing-bugs/references/reproduction.md": "a3497000b0acbfcf5cf3e72e2ab7e69d37f234b4e1741fb19117d56cfc0cff3b",
+    ".agents/skills/diagnosing-bugs/upstream/hitl-loop.template.sh.txt": "35103539fc36873eea36074769ad454f9379d6fc8b2dc0e26ce987fd3bfe5503",
+    ".agents/skills/diagnosing-bugs/upstream/source.md": "849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d",
     ".agents/skills/documentation-lookup/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
     ".agents/skills/documentation-lookup/PROVENANCE.md": "1be097155525982e71d82ca1a9c85079488d81d65d44ee00343abf709ea2cc3f",
     ".agents/skills/documentation-lookup/SKILL.md": "17aa5f6309f0711949cb07de0f6b2afb70421c72010df14e0bee8093c58032b9",
     ".agents/skills/documentation-lookup/UPSTREAM.diff": "2388336be9f4b3d9e3a3823e1a556bdbc1ff0b928096e839ac6416594cfafa0b",
     ".agents/skills/documentation-lookup/upstream/ecc-source.md": "81ad2b5b4acbe02259f4b6cbfd9111d81d5cfe51025051b6048959c45f6516c1",
+    ".agents/skills/domain-modeling/LICENSE": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    ".agents/skills/domain-modeling/PROVENANCE.md": "fd040cf36dec7c62a228b5445b196d3fd3c7947d09678812aadc61f8a5d37dab",
+    ".agents/skills/domain-modeling/SKILL.md": "f475b9c236a703912b200e8cc507714041d0a95e347becc09e7b239f9942515b",
+    ".agents/skills/domain-modeling/UPSTREAM.diff": "b9a8dc34af7df3226ffc440afc656ef1009cb7ee1120dff7b80cb6af73c1123f",
+    ".agents/skills/domain-modeling/assets/glossary-template.md": "594b798c9de3e91727ef0142f9ab2470fe69a55bce6d8a0b5e1878a7bc52b788",
+    ".agents/skills/domain-modeling/references/recording.md": "07960c5c90d77574581e1f471455fc3f7bc9f087891c711f2e898edfafb40d7e",
+    ".agents/skills/domain-modeling/upstream/ADR-FORMAT.md": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
+    ".agents/skills/domain-modeling/upstream/GLOSSARY-FORMAT.md": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801",
+    ".agents/skills/domain-modeling/upstream/source.md": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3",
+    ".agents/skills/grilling/LICENSE": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    ".agents/skills/grilling/PROVENANCE.md": "ea16e7c58f3c21dbbfc330fbdc45f8f2b09713815de1d8181f4355e2506cb4fb",
+    ".agents/skills/grilling/SKILL.md": "97ba614116c941850c9a38253623c91195d9afac7435bade08ae67f31239c981",
+    ".agents/skills/grilling/UPSTREAM.diff": "2710613a8b84850566ab9169267cbad528a8710ce35f47efab650b3371df5689",
+    ".agents/skills/grilling/upstream/source.md": "befdff1e27a1dfe2a294d5871169ac1afe16d983911daa4f32627514a48c1e15",
+    ".agents/skills/handoff/LICENSE": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    ".agents/skills/handoff/PROVENANCE.md": "3d8e9e2788c17dcf81da5735ea15a5d60823d4df1c63ff0e555d981706b03911",
+    ".agents/skills/handoff/SKILL.md": "c4f41b436de21e4529ded7aabd4f149698e9ee8a9923b128e9487fca1b467d1b",
+    ".agents/skills/handoff/UPSTREAM.diff": "ecc318ded1aec2c09d0fc480987fd769ee58776f96e459d7d01aa63e8588e122",
+    ".agents/skills/handoff/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+    ".agents/skills/handoff/assets/handoff-template.md": "8e17990ac9736e8bcf45f3409d94d21d04c1419695e20d833f9cbdafd6845a65",
+    ".agents/skills/handoff/upstream/source.md": "4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3",
     ".agents/skills/product-capability/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
     ".agents/skills/product-capability/PROVENANCE.md": "bcedeba405d80db0be90088ba81274c85bf9e61d81221ebf55e949cef36e023c",
     ".agents/skills/product-capability/SKILL.md": "48bc3bd11ad05e3e8dff0607dd08cd0b2cba93f3d0bbac3e2f446c575da8ea47",
@@ -197,6 +395,13 @@
     ".agents/skills/requirements-traceability/SKILL.md": "69e332ad5bf5b04798dabf7adb4606ccec629cbc5d4a5c65a560cf2bd4b016d1",
     ".agents/skills/requirements-traceability/assets/traceability-format.md": "9ae18737bf642f6620d82a2dc9b76e88a8482fcaf10c8c26b3c55a7a5c84d056",
     ".agents/skills/requirements-traceability/scripts/check_traceability.py": "72892ac11dc4f6d87ecfc7879b1aa3d5a074f2fa23831838f0a4374d371dda03",
+    ".agents/skills/retro/LICENSE": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    ".agents/skills/retro/PROVENANCE.md": "6a6d83e13a2cc8178415b27aa190066df53fc4cdb7f2c2d2d0bcab87eb589306",
+    ".agents/skills/retro/SKILL.md": "0b14e1940a33311394120f1499f0ddfbd0ed82094f8abcc8bf13b35f98d03e81",
+    ".agents/skills/retro/UPSTREAM.diff": "4c49e3fe7517bb58049a4ae1089daee45d086c24dc30b69f7e131c4ffe6c9d0b",
+    ".agents/skills/retro/agents/openai.yaml": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+    ".agents/skills/retro/references/instruction-placement.md": "b4bd937bf925563855cdf696260308a381ccc6724fa9503e4aa46e5016aac488",
+    ".agents/skills/retro/upstream/source.md": "33fbc28568e3146f20fd908b12998bc0ab30aa4f4c87288199a40793efa94696",
     ".agents/skills/scientific-thinking-literature-review/LICENSE": "326146379f01bb137c0a5d3c54770c1aa31076705c8b88a7f6b26a460f6221b2",
     ".agents/skills/scientific-thinking-literature-review/PROVENANCE.md": "df3f6b241de7ad8504415faf86c54f1dd870d169f687ab32862e3ec1e1950f91",
     ".agents/skills/scientific-thinking-literature-review/SKILL.md": "380918f545c7e9b297b23bee4a0432deba977acbdb217232bf1ab9d5aa3c562e",
@@ -234,12 +439,26 @@
     ".agents/skills/verification-loop/SKILL.md": "0e499fcb2003d353d9d83c37268496a5bc57b08cfa63c758fea1f8256281bf76",
     ".agents/skills/verification-loop/UPSTREAM.diff": "031e82e066a2dde4ac8406c18aea291e926e34b8506c90026556233377c4346f",
     ".agents/skills/verification-loop/upstream/ecc-source.md": "5b06be54d4852f60e6cf1b04c6e9a4748554334eb3e41af6c0959b544e6464ae",
+    ".agents/skills/writing-for-agents/LICENSE": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    ".agents/skills/writing-for-agents/PROVENANCE.md": "5e9bede0e5cdcda0e4cf04c36293402dd2afd9a4dd9c5f8b41a7a8e3f5d3fd4d",
+    ".agents/skills/writing-for-agents/SKILL.md": "4c01feeadab86011b07603d011fb1597d0894092a5df7ea821928c8ab28c1e96",
+    ".agents/skills/writing-for-agents/UPSTREAM.diff": "527b9a2a7935a406be413632eb854c9447d844f3aa269496ff4155f312780e29",
+    ".agents/skills/writing-for-agents/references/editing-techniques.md": "609f0353e5907d1eae917779cc97bcc528aef549d4f0c32d9f77ff1fd6ab53c7",
+    ".agents/skills/writing-for-agents/references/skill-packaging.md": "ac8780f973c4941a9099aa3c291bca96322aa8046b61c0ccad8b0abfd070f68f",
+    ".agents/skills/writing-for-agents/upstream/SKILL-MECHANICS.md": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+    ".agents/skills/writing-for-agents/upstream/source.md": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
     ".gitignore": "59e55853fb563f4d781ac5cc3d69820ac4dacd6396fc32d9211695a3e7cd74b2",
-    "LICENSE": "ac62502793812b58f1430ed9137f8c12e6ded62f7ad039ad11fdf5c839db6b22",
-    "NOTICE.md": "42d540280cc7db25d75bd99b290f92902509125bce06f7165ce9cd42679dbc0c",
-    "README.md": "b537190c90c89c0b0874b14ceb3e7f873033023d7c29434168adb78911e215da",
-    "tests/check_frontmatter.rb": "c7a9f62e89ead0a17bf44da6d0954e9852651d387867825b78580566bb711e35",
-    "tests/test_bundle.py": "518a7529bf7ec01e42f62533cb7b846cb73900e02e4602fce9cce491853de57a",
+    "LICENSE": "2025c438f3da0bf233fd76eb683bf8f6aa085424de9bab4ba015670fd44a2b1c",
+    "NOTICE.md": "e1be33c6f566e10d10398ece489be35752dda70fd0ab10dd159df78219179235",
+    "README.md": "4ff4245077f3e03a20673d32b69eed7a6c8950f76dace2e8b5ec68c5ecfc9385",
+    "RELEASE-NOTES.md": "48eb77575f27c21b69789b9ab157356cb0c6e32e7f98c9b8cdf1172873ba6878",
+    "tests/check_frontmatter.rb": "bb26be899ff9a816a21213ca3c6f5c793d437ba021e87c467b499957469845a0",
+    "tests/test_bundle.py": "36e23ec81931c6655fd1f4fa6c02da4411108a0b983fa9b64925eece7379f349",
     "tests/test_traceability.py": "3dd546aad9583ffe4b085bf0bb49925b127a41498cfafe8ec11e3c22d0b3b1ba"
-  }
+  },
+  "additional_upstream": {
+    "repository": "https://github.com/mattpocock/skills",
+    "commit": "59db609eb1e18aaf59b63284d0e52255aff0c63c"
+  },
+  "content_revision": 2
 }

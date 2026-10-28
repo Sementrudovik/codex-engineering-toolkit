@@ -19,3 +19,12 @@ active SKILL.md instructions and their resources are unchanged.
 
 Third-party standards and documentation referenced by Skills remain owned by
 their respective authors. Links do not license external materials under MIT.
+
+## Matt Pocock adaptations (1.0.1-rc.2)
+
+Source: https://github.com/mattpocock/skills
+Pinned commit: `59db609eb1e18aaf59b63284d0e52255aff0c63c`.
+Copyright (c) 2026 Matt Pocock, MIT. Original licenses and source archives
+are retained for all six adaptations. Toolkit changes are also MIT.
+The current total is 4 Reuse / 17 Adapt / 5 Build. The earlier counts above
+describe the original ECC-based set. No endorsement by upstream authors is implied.

@@ -1,8 +1,12 @@
 # Codex Engineering Toolkit
 
-Version **1.0.0-rc.1**, a release candidate dated 2026-10-25.
-20 project-scoped Skills: **4 Reuse / 11 Adapt / 5 Build**. The ECC source is pinned
+Version **1.0.1-rc.2**, a release candidate dated 2026-10-28.
+26 Skills: **4 Reuse / 17 Adapt / 5 Build**. The ECC source is pinned
 to commit `90606c8315ee09cafc303515c5f33024db6b9882`.
+
+The six additions adapt [mattpocock/skills](https://github.com/mattpocock/skills)
+at commit `59db609eb1e18aaf59b63284d0e52255aff0c63c`.
+See [release notes](RELEASE-NOTES.md) for acceptance and validation limits.
 
 ## Project installation
 
@@ -12,8 +16,10 @@ For another existing or new project, copy the selected Skill directories into
 Check for name collisions before copying; review existing Skills before replacing
 them. Restart your Codex session if the new Skills do not appear.
 Review project-specific AGENTS.md instructions and configuration separately:
-this toolkit does not replace your project's rules. User-level installation
-across all projects is outside the scope of this setup.
+this toolkit does not replace your project's rules. For local use across projects, copy the selected directories into
+`~/.agents/skills/`. Check for duplicates between user and project locations;
+keep one active copy per name. Updates to this repository do not automatically
+update independent user installations.
 
 ## Usage
 
@@ -47,6 +53,12 @@ Copying this folder does not make local Skills available in ordinary ChatGPT cha
 | `sqlite-data-model` | SQLite data models, keys, and migrations | Build |
 | `system-design` | System architecture, context, and interactions | Build |
 | `requirements-traceability` | Links between requirements and verification evidence | Build |
+| `writing-for-agents` | Agent instructions, conditional references, completion criteria | Adapt |
+| `grilling` | Stress-test plans through dependent questions | Adapt |
+| `diagnosing-bugs` | Reproduce failures and test explanations before fixing | Adapt |
+| `retro` | Evidence-backed session retrospective (explicit invocation) | Adapt |
+| `handoff` | Transfer task state with verified status and redaction (explicit invocation) | Adapt |
+| `domain-modeling` | Domain terminology, contexts, relationships, and invariants | Adapt |
 
 ## Dependencies and limitations
 
